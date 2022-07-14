@@ -1,0 +1,14 @@
+%flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+%imagen {
+    width: 100%;
+    height: auto;
+}
+
+%hover {
+    transition: all 0.5s;
+    transform: scale(1.04);
+}

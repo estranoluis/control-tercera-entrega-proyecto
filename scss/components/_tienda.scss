@@ -1,0 +1,150 @@
+/* Tienda con productos*/
+
+.grid-product {
+    background-color: $bg-content;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-bottom: 50px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    display: map-get($standard, flexbox-standard);
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .wrapper {
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    &:hover {
+      animation: card 0.5s  0s 0.5 normal forwards;
+      @keyframes card {
+        0% {
+            transform: scale(1);
+        } 
+        100% {
+            transform: scale(1.1);
+        }
+      }
+    }
+    .product {
+      height: 280px;
+      width: 270px;
+      .product-img {
+        border-radius: 7px 7px 0px 0px;
+        img {
+          @extend %imagen;
+        }
+      }
+      .product-info {
+        @extend %imagen;
+        border-radius: 0px 0px 7px 7px;
+        background-color: map-get($standard, bg-standard);
+        font-family: $font-content;
+        .product-text {
+          height: 220px auto;
+          width: 260px auto;
+          h2 {
+            text-align: center;
+            font-size: 17px;
+            font-family: $font-content;
+            font-weight: 4300;
+            text-transform: uppercase;
+            color: #ffffff;
+            letter-spacing: 0.1em;
+            padding: 1%;
+          }
+          h3 {
+            @include texto (15px, center);
+            font-family: $font-content;
+            font-weight: 4300;
+            text-transform: uppercase;
+            color: #ffffff;
+            letter-spacing: 0.1em;
+          }
+          p {
+            font-family: $font-content;
+            color: #ffffff;
+            line-height: 1.7em;
+            font-size: 10px;
+            font-weight: lighter;
+            overflow: hidden;
+          }
+        }
+        .product-price-btn {
+          height: 103px;
+          width: 327px;
+          margin-top: 15px;
+          position: relative;
+          left: 5px;
+          p {
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            height: 50px;
+            font-family: $font-content;
+            margin: 0 0 0 15px;
+            font-size: 25px;
+            font-weight: lighter;
+            color: #ffffff;
+          }
+          button {
+            float: right;
+            height: 50px;
+            width: 126px;
+            margin-right: 75px;
+            box-sizing: border-box;
+            border: transparent;
+            border-radius: 60px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: $bg-page;
+            background-color: #ffffff;
+            cursor: pointer;
+            outline: none;
+            &:hover {
+              background-color: $bg-btn;
+              color: white;
+            }
+          }
+          span {
+            display: inline-block;
+            height: 50px;
+            font-family: 'Suranna', serif;
+            font-size: 25px;
+            margin-top: 15px;
+          }
+        }     
+      }
+    }
+  }
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+

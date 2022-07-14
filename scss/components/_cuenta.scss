@@ -1,0 +1,170 @@
+/* Formulario inicio de sesion */
+
+.login {
+    background: -webkit-repeating-linear-gradient(#9c6ace ,#373550);
+    padding: 3% 5% 3% 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: center;
+    .form-container{
+      background-color: #0a7bcb;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px -15px rgba(0,0,0,0.3);
+      position: relative;
+      .title {
+        @include texto (25px, center);
+        color: white;
+        font-weight: 700;
+        margin: 0 0 15px;
+      }
+      .description{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 13px;
+        margin: 0 0 10px;
+        display: block;
+      }
+      ul {
+        @include margen (0 0 15px, 0);
+        list-style: none; 
+        @extend %flexbox;
+        li {
+          background-color: #fff;
+          margin: 0 3px;
+          font-family: $font-content;
+          line-height: 27px;
+          height: 28px;
+          width: 28px;
+          border-radius: 50%;
+          display: block;
+          transition: all 0.3s ease 0s;
+          &:hover {
+            background-color: map-get($standard, color-standard);
+            .fab{
+              color: white;
+            }
+          }
+        }
+      }
+      .form-horizontal {
+        .form-group{ 
+          margin: 0 0 15px;
+          &:last-of-type{
+            text-align: left;
+            margin-bottom: 35px;
+          }
+          .form-control{
+            color: map-get($standard, color-standard);
+            background: #235489;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            height: 40px;
+            padding: 6px 12px;
+            border-radius: 5px;
+            border: 2px solid #F2F5F6;
+            box-shadow: none;
+            &:focus{
+              border-color: rgba(78, 76, 151, 0.5);
+              box-shadow: none;
+            }
+            &::placeholder{
+              color: #e1e1e1;
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+          .check-label{
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: none;
+            margin: -2.5px 0 0;
+            vertical-align: text-top;
+            display: inline-block;
+          }
+          .check-label a{
+            color: white;
+            transition: all 0.3s ease;
+            &a:hover{ 
+              text-decoration: underline; 
+            }
+          }
+          .checkbox{
+            height: 17px;
+            width: 17px;
+            min-height: auto;
+            margin: 0 3px 0 0;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            transition: all 0.3s ease; 
+            }
+          .checkbox:before{
+            content: '';
+            height: 6px;
+            width: 12px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            opacity: 1;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 2px;
+            top: 2.5px;
+            transition: all 0.3s ease;
+          }
+          .checkbox:checked {
+            background-color: $bg-login;
+            border-color: $bg-login;
+          }
+          .checkbox:checked:before  { 
+            opacity: 1; 
+            }
+          .checkbox:not(:checked):before  { 
+            opacity: 0;
+            }
+          .checkbox:focus { 
+            outline: none; 
+            }
+        }
+        .btn{
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          width: 130px;
+          @include margen (0 10px 10px 0, 11px);
+          border: 2px solid $bg-login;
+          border-radius: 15px;
+          display: inline-block;
+          transition: all 0.3s ease 0s;
+        }
+        .btn.signin{
+          color: $bg-login;
+          background-color: #fff;
+        }
+        .btn.signup{
+          color: #fff;
+          background-color: $bg-login;
+        }
+        .btn:hover,
+        .btn:focus{
+          color: $bg-login;
+          background-color: #fff;
+          box-shadow: 0 0 5px $bg-login, 0 0 15px $bg-login inset;
+        }
+        .btn.signin:hover,
+        .btn.signin:focus{
+          text-shadow: 3px 3px rgba(0,0,0,0.3);
+          box-shadow: 0 0 5px $bg-login;
+        }
+      }
+    }
+  }

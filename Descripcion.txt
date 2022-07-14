@@ -1,0 +1,11 @@
+        1 - Agregué meta tags en todas las páginas:
+            - meta description.
+            - meta keywords.
+            - Open Graph (tittle, description, image).
+        2 - Le agregue nombre a todos los alt y tittle a todas la imagenes y videos        correspondientes.
+        3 - Cada página tiene su título correspondiente.
+        4 - Verifique que la semántica este en orden (section, article, main).
+        5 - Organizé el codigo de una mejor forma.
+        6 - En la carpeta scss/base estan los elementos extend, map y mixin; los cuales estan ya enlazados a varios elementos del código.
+        7 - Todas las rutas se encuentran organizadas.
+        8 -  Este es el enlace hacia la pagina cargada a un servidor para corroborar el punto 7, https://controlgames.netlify.app/.

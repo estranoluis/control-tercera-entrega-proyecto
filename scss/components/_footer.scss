@@ -1,0 +1,178 @@
+/* Footer */
+
+#footer {
+  display: grid;
+    grid-area: footer;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -ms-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+    .typo-light h1, 
+    .typo-light h2, 
+    .typo-light h3, 
+    .typo-light h4, 
+    .typo-light h5, 
+    .typo-light h6,
+    .typo-light p,
+    .typo-light div,
+    .typo-light span,
+    .typo-light small {  
+      color: $font-color;
+    }
+    .main-footer { 
+      background-color: $bg-home;
+    }
+    ul{  padding-left: 0;  list-style: none;
+      .thumb-content {
+        margin-left: 25%;
+          a {
+            text-decoration: none;
+            color: $font-color;
+            &:hover {
+              color: #969696;
+            }
+          }
+          ::before {
+            content: "\f190";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            margin-left: 5px;
+            color: #ffffff;
+          } 
+      }
+    }
+    /* Widgets */
+    .widget.no-box {
+      p {
+        text-align: justify;
+      }
+    }
+    .widget {  
+      padding: 40px; 
+      margin-bottom: 40px;
+      .widget-title {
+        margin-bottom: 20px;
+        @include texto (medium, justify);
+        .widget-tittle-r {
+          display: map-get($standard, flexbox-standard);
+          flex-direction: column;
+          margin-top: 12%;
+        }
+      }
+      span {
+        background: #839FAD none repeat scroll 0 0;
+        display: block;
+        height: 1px;
+        margin-top: 25px;
+        position: relative;
+        width: 20%;}
+        ::after {
+          background: inherit;
+          content: "";
+          height: inherit;    
+          position: absolute;
+          top: -4px;width: 50%;
+        }
+    } 
+    .fa {
+      background-color: #fff;
+      color: #000;
+      padding: 9px;
+      border-radius: 5px;
+      margin-bottom: 10%;
+      &:hover {
+        transition: all 0.5s;
+        transform: scale(1.5);
+        background-color: $bg-btn;
+        color: white;
+      }
+    }
+    #subscribe-box {
+      .emailfield {
+        margin: auto;
+      }
+    } 
+    input[type="text"] {
+      background: rgba(255,255,255,0.075);
+      padding: 10px 15px;
+      color: #aaa;
+      border: 3px solid rgba(0,0,0,0.1);
+      @include texto (14px, center);
+      margin-bottom: 16px;
+      border-radius: 5px;
+      transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+      transition-delay: 0.2s;
+      width: 100%;
+    }
+  
+    input.submitbutton.ripplelink {
+      background: #e67e22;
+      border: 3px solid rgba(0,0,0,0.1);
+      color: #fff;
+      border-color: #e67e22;
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+      transition-delay: 0s;
+      width: 100%;
+      font-size: 14px;
+      border: 0px solid;
+      transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+      padding: 10px 15px;
+      margin-bottom: 16px;
+      border-radius: 5px;
+      &:hover {
+        background-color: white;
+        color: $bg-home;
+        font-weight: 100;
+      }
+    }
+    .btn {
+      background-color: #ff8d1e; 
+      color:#fff;
+        &:hover, :focus, .active {
+          background: #4b92dc;
+          font-weight: 600;
+          color: #fff;
+        }
+    }
+    /* Copy Right Footer */
+    .footer-copyright { 
+      background: #2d50a1;
+      padding: 5px 0;
+      .logo {   
+        display: inherit;
+      }
+      nav {   
+        float: right;   
+        margin-top: 5px;
+        ul { 
+          list-style: none;
+          @include margen (0,0);
+          li { 
+            border-left: 1px solid #505050;
+            display: inline-block;
+            line-height: 12px;
+            margin: 0;
+            padding: 0 8px;
+            a{
+              color: #969696;
+              &:first-child { 
+                border: medium none;
+                padding-left: 0;
+                }
+            }
+          }
+        }
+      }
+      p { 
+        color: #969696; 
+        margin: 2px 0 0;
+      }
+    }
+}

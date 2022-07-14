@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta tags -->
+    <meta name="description" content="Noticias y novedades del mundo del gaming">
+    <meta name="keywords" content="Noticias, Gaming, videojuegos, consolas, reviews, productos">
+    <!-- Open Graph-->
+    <meta property="og:title" content="Control Games">
+    <meta property="og:description" content="Entérate de las más rencientes novedades de videojuegos">
+    <meta property="og:image" content="https://ibb.co/GWw8Bfj">
+    <!--Link a Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  
+    <!-- Link a Fontsawesome-->
+    <script src="https://kit.fontawesome.com/ba6d99db63.js" crossorigin="anonymous"></script>
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link a Icono -->
+    <link rel="icon" href="Multimedia/Images/control.svg"> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+    </style>
+    <title>Control Games</title>
+  </head>
+  <body id="body">
+    <div class="grid-home">
+      <!--Cabecera-->
+      <header id="cabecera">
+        <div class="cabecera">
+          <a href="index.html"> <img src="Multimedia/Images/control.svg" alt="controlLogo" class="cabecera__logo"></a>
+          <img src="multimedia/Images/megagames.jpg" alt="megabackground" class="cabecera__background">      
+          <!-- Zona navegable-->
+          <nav class="navbar navbar-expand-lg bg-#345bb3">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon"></div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Pages/Cuenta.html">Cuenta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Pages/Noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Pages/Reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="../pages/tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="pages/Tienda.html">Juegos</a></li>
+                      <li><a class="dropdown-item" href="pages/tienda.html">Accesorios</a></li>
+                      <li><a class="dropdown-item" href="pages/tienda.html">Figuras</a></li>
+                      <li><a class="dropdown-item" href="pages/tienda.html">Apparel</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                  <button class="btn btn-outline-success color=white" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Carrusel de imagenes con bootstrap -->
+      <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Multimedia/Images/slidearceus.jpg" class="d-block w-100 bg-body" alt="arceus">
+          </div>
+          <div class="carousel-item">
+            <img src="Multimedia/Images/slidehorizon.jpeg" class="d-block w-100 bg-body" alt="horizon">
+          </div>
+          <div class="carousel-item">
+            <img src="Multimedia/Images/slidekirby.jpg" class="d-block w-100 bg-body" alt="kirby">
+          </div>
+          <div class="carousel-item">
+            <img src="Multimedia/Images/slidering.jpg" class="d-block w-100 bg-body" alt="elden">
+          </div>
+          <div class="carousel-item">
+            <img src="Multimedia/Images/slidestrategy.jpg" class="d-block w-100 bg-body" alt="strategy">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Video promocional para compra de producto -->
+      <main id="cuerpo">
+        <section class="cuerpo">
+          <div class="cuerpo-video">
+            <video width="1080" height="720" src="multimedia/Videos/eldenpromo.mp4" tittle="eldenpromo" class="cuerpo-video-item"
+                muted
+                autoplay
+                loop>
+              </video>
+          </div>
+          <div class="cuerpo-logo">
+            <img width="250" height="50" src="multimedia/Images/eldenlogo.png" alt="EldenLogo">
+          </div>
+          <div class="cuerpo-parrafo">
+              <p><h2  class="cuerpo-parrafo-titulo">Un nuevo mundo creado por Hidetaka Miyazaki y George R. R. Martin
+                La Orden Dorada se ha roto.</h2></p>
+          </div>
+          <div class="cuerpo-parrafo">
+            <p><h5 class="cuerpo-parrafo-texto">Levántate, Sin Luz y déjate guiar por la gracia para blandir el poder del Elden Ring y convertirte en un Elden Lord en las Tierras Intermedias. En las Tierras Intermedias gobernadas por la Reina Marika la Eterna, el Elden Ring, la fuente del Erdtree, ha sido destruido. La descendencia de Marika, todos semidioses, reclamó los fragmentos del Anillo de Elden conocidos como las Grandes Runas, y la esencia de su nueva fuerza desencadenó una guerra: La Destrucción. Una guerra que significó el abandono por parte de la Gran Voluntad. Y ahora la guía de la gracia llegará a los Sin Luz que fueron despreciados por la gracia del oro y exiliados de las Tierras Intermedias.</h5></p>
+          </div>
+          <div class="cuerpo-parrafo">
+            <p><h5 class="cuerpo-parrafo-texto">Sigue el camino hacia las Tierras Entre más allá del mar brumoso para pararte ante el Elden Ring. Y conviértete en el Elden Lord.</h5>
+            </p>
+          </div>
+          <div class="cuerpo-parrafo">
+            <a href="https://www.bandainamcoent.com/es/agecheck?redirect_uri=%2Fgames%2Felden-ring" class="cuerpo-parrafo-item" target="_blank">COMPRAR AHORA</a>
+          </div>     
+        </section>    
+      </main>  
+      <!-- Noticias destacadas con enlaces directos -->    
+      <article id="portada">
+        <div class="portada">
+          <div class="portada-foto">
+            <a href="Pages/Articulos/Articulo1.html"> <img src="Multimedia/Images/Devolverportada.png" alt="Devolverart" class="portada-foto-item"></a>
+          </div>
+          <div class="portada-foto">
+            <a href="Pages/Reviews/Review2.html"> <img src="Multimedia/Images/horizonportada.png" alt="horizonrew" class="portada-foto-item"></a>
+          </div>
+            <div class="portada-foto">
+            <a href="Pages/Reviews/Review1.html"> <img src="Multimedia/Images/eldenportada.png" alt="eldenrew" class="portada-foto-item"></a>
+          </div>
+        </div>
+      </article>
+      <aside id="side">
+        <div class="side">
+          <div class="side-foto">
+            <img src="multimedia/Images/Top10.png" class="side-foto-item" alt="top10">
+          </div>  
+        </div>
+      </aside>
+      <article id="banner">
+        <div class="banner">
+            <a href="Pages/Articulos/Articulo3.html" class="banner-item"><h2>Sonic Frontiers muestra su combate contra colosos y otros enemigos en un nuevo tráiler</h2>
+              <img src="multimedia/images/Sonicthumb.jpg" class="banner-item-foto" alt="sonicnoticia"></a>
+        </div>  
+      </article>
+      <!-- Pie de Página -->
+      <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget subscribe no-box">
+                  <h5 class="widget-title">CONTROL<span></span></h5>
+                    <p>Un medio donde la opinión de los lectores es lo más importante y además, cuenta de verdad.</p>
+                </div>
+              </div>  
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                    <h5 class="widget-title">Enlaces<span></span></h5>
+                    <ul class="thumbnail-widget">
+                      <li>
+                        <div class="thumb-content"><a href="index.html">&nbsp;Home</a></div> 
+                      </li>
+                      <li>
+                        <div class="thumb-content"><a href="Pages/Cuenta.html">&nbsp;Cuenta</a></div> 
+                      </li>
+                      <li>
+                        <div class="thumb-content"><a href="Pages/Noticias.html">&nbsp;Noticias</a></div> 
+                      </li>
+                      <li>
+                        <div class="thumb-content"><a href="Pages/Reviews.html">&nbsp;Reviews</a></div> 
+                      </li>
+                      <li>
+                        <div class="thumb-content"><a href="Pages/Tienda.html">&nbsp;Tienda</a></div> 
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                  <h5 class="widget-title">Síguenos<span></span></h5>
+                      <div class="widget-tittle-r">
+                        <a href="#"> <i class="fa fa-facebook"> </i> </a>
+                        <a href="#"> <i class="fa fa-twitter"> </i> </a>
+                        <a href="#"> <i class="fa fa-instagram"> </i> </a>
+                        <a href="#"> <i class="fa fa-youtube"> </i> </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="widget no-box">
+                      <h5 class="widget-title">Contáctanos<span></span></h5>
+                        <p>Súmate a nuestro Newsletter y esta al tanto de lo último en gaming, así como las mejores ofertas</p>
+                        <div class="emailfield">
+                          <form action="#">
+                            <input type="text" name="email" value="Email">
+                            <input name="uri" type="hidden" value="arabiantheme">
+                            <input name="loc" type="hidden" value="en_US">
+                            <input class="submitbutton ripplelink" type="submit" value="Suscríbete">
+                          </form>  
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>      
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>Copyright Control Games © 2022. Todos los derechos reservados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+  </body>
+</html>
+

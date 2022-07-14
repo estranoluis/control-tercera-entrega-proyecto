@@ -1,0 +1,9 @@
+@mixin margen ($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+}
+
+@mixin texto ($tamano, $alineacion,) {
+    font-size: $tamano;
+    text-align: $alineacion;
+}

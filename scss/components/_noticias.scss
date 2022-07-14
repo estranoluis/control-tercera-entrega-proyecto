@@ -1,0 +1,121 @@
+/* Lista de Articulos */
+
+.grid-articulos {
+    display: grid;
+    gap: 5px;
+    grid-column: 1fr;
+    grid-row: 5, 1fr;
+    grid-template-areas: 
+    ' header   header   header '
+    ' noticia  noticia  aside '
+    ' noticia  noticia  aside '
+    ' noticia  noticia  aside '
+    ' footer   footer   footer';
+    main {
+      display: grid;
+      grid-area: noticia;
+      ul {
+        background: map-get($standard, content-standard);
+        padding: 3%;
+        li {
+          background-color: $bg-home;
+          list-style-type: none;
+          border-radius: 4px 4px 4px 4px;
+          margin: 2%;
+          a {
+            display: map-get($standard, flexbox-standard);
+            flex-direction: row-reverse;
+            color: white;
+            text-decoration: none;
+            border-radius: map-get($standard, border-standard);
+            &:hover {
+              color:#017bab;
+              background-color:aliceblue;
+              @extend %hover;
+              border-radius: map-get($standard, border-standard);
+            }
+            img {
+              padding: 2%;
+              width: 45%;
+              height:auto;
+              border-radius: map-get($standard, border-standard);
+            }
+            h2 {
+              font-size: 120%;
+              padding: 2% 4% 2% 4%;
+              margin-top: 8%;
+              margin-bottom: 8%;
+            }
+          }
+        }       
+      }
+    }
+    #aside {
+      display: grid;
+      grid-area: aside;
+      ul {
+        background-color: $bg-content;
+        padding: 11.5% 2% 11.5% 2%;
+        li {
+          list-style-type: none;
+          border-radius: map-get($standard, border-standard);
+          background-color: $bg-home;
+          padding: 5%;
+          img {
+            border-radius: map-get($standard, border-standard);
+            @extend %imagen;
+          }
+        }
+      }
+    }
+}  
+.grid-noticias {
+  #articulo {
+    background-color: $bg-content;
+    border-radius: map-get($standard, border-standard);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+      .articulo {
+        color: white;
+        margin: 2%;
+          h1 {
+            text-align: center;
+            font-weight: 600;
+            color: $bg-page;
+            background-color: white;
+            border-color: $bg-page;
+            border-radius: map-get($standard, border-standard);
+            margin: 2%;
+          }
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            margin: 2%;
+          }
+          h3 {
+            text-align: justify;
+            margin: 20px 40px 20px 40px;
+            padding:0% 2% 0% 2%;
+            text-indent: 40px;
+          }
+      }
+      .articulo-foto {
+        text-align: center;
+        margin: 20px 40px 20px 40px;
+        img {
+          @extend %imagen;
+          padding: 1%;
+        }
+      }
+      .articulo-video {
+        text-align: center;
+        video {
+          padding: 2%;
+          @extend %imagen;
+        }
+      }
+  }
+}
+
+

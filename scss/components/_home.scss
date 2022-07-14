@@ -1,0 +1,156 @@
+/* Home */
+
+/* Slide de fotos con animación con bootstrap */
+
+#carouselFade {
+    width: inherit;
+    height: 100%;
+    margin-top: 1%;
+    display: grid;
+    grid-area: slider;
+  }
+  
+  /* Publicidad con video y enlace a compra */
+.grid-home {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 8, 1fr;
+  grid-template-areas: 
+  '   header  header  header'
+  '   slider  slider  slider'
+  '   publi   publi    publi'
+  ' articulo articulo   side '
+  ' articulo articulo   side   '
+  ' articulo articulo   side '
+  ' banner   banner    banner'
+  ' footer   footer    footer';   
+  #cuerpo {
+    margin-top: 1%;
+    @extend %imagen;
+    display: grid;
+    grid-area: publi;
+    .cuerpo {
+      background-image: url(../multimedia/images/eldenwall.jpg);
+      background-size: cover;
+      color: rgb(202, 198, 198);
+      border: solid thick rgb(84, 78, 47);
+      @extend %imagen;
+      text-align: center;
+      font-family: 'Bebas Neue';
+      text-decoration: none;
+      padding: 1%;
+      video {
+        @extend %imagen;
+        padding: 2%;
+      }
+      img {
+        height: auto;
+        width: 20rem;
+      }
+      h2 {
+        @include texto (xx-large, center);
+      }
+      h5 {
+        font-size: large;
+        text-justify: auto;
+      }
+      a {
+        @include texto (xx-large, center);
+        line-height: 30px;
+        font-family: 'Bebas Neue';
+        text-decoration: none;
+        @include margen (0% 1% 0% 1%, 1% 0% 1% 0%);
+        color: rgb(202, 198, 198);
+        &:hover{
+          color: rgb(187, 191, 72);
+          animation: compra 0.5s  0s 0.5 normal forwards;
+          @keyframes compra {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1.1);
+            }
+          }
+        }
+      } 
+    }
+  }
+
+  /* Noticias Relevantes Home */
+
+  #portada {
+    @extend %imagen;
+    display: grid;
+    grid-area: articulo;
+    margin-top: 2%;
+    .portada {
+      background-color: map-get($standard, bg-standard);
+      display: map-get($standard, flexbox-standard);
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 2%;
+      img {
+        border-radius: map-get($standard, border-standard);
+        @extend %imagen;
+        &:hover {
+          @extend %hover;
+        }
+      }
+    }
+  }
+
+  /* Sidebar home */
+
+  #side {
+    background-color: map-get($standard, bg-standard);
+    display: grid;
+    grid-area: side;
+    margin-top: 4%;
+    .side {
+      border-radius: map-get($standard, border-standard);
+      padding: 18.6% 5% 18.6% 5%;
+      img {
+        border-radius: map-get($standard, border-standard);
+        @extend %imagen;
+        &:hover {
+          @extend %hover;
+        }
+      }
+    }  
+  }
+
+  #banner {
+    display: grid;
+    grid-area: banner;
+    background-color: map-get($standard, bg-standard);
+    margin: 1% 0 1% 0;
+    .banner {
+      border-radius: map-get($standard, border-standard);
+      padding: 2%;
+      a {
+        display: map-get($standard, flexbox-standard);
+        flex-direction: row-reverse;
+        text-decoration: none;
+        color: white;
+        h2 {
+          padding:2%;
+          font-size: large auto;
+        }
+        img {
+          max-width: auto;
+          height: 100%;
+          padding: 2% 2% 2% 2%;
+          border-radius: map-get($standard, border-standard);
+        }
+      }
+      &:hover {
+        background-color: white;
+        @extend %hover;
+        a{
+          color:#017bab;
+        }
+      }
+    }
+  }
+}
