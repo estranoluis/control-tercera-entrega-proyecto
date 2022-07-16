@@ -21,7 +21,7 @@
         font-family: arial;
         background: radial-gradient(ellipse, #49acf3 0%, #209bf1);
         margin: auto;
-        width: 100%;
+        width: 75%;
 
         /*Posible paleta de colores: #f7668e  #345bb3  #d3d0d7  #0a0a16  #209bf1  #2bdad1  #6f4f8f  #4f4d6f  */
         #cabecera, .slider, #footer {
@@ -34,161 +34,168 @@
 
         /* Media query */
         @media screen and (max-width: 768px) {
-        .grid-home,
-        .grid-cuenta,
-        .grid-articulos,
-        .grid-noticias,
-        .grid-products {
-            display: flex;
-            flex-direction: column;
-            #cabecera {
-                .cabecera {
-                    .cabecera__logo {
-                        width: 50%;
-                        height: auto;
-                        left: 1%;
-                        margin-left: 12%;
-                        margin-top: 0;
-                    }
-                    .cabecera__background {
-                        width: 100%;
-                        height: auto;
+        #body {
+            font-family: arial;
+            background: radial-gradient(ellipse, #49acf3 0%, #209bf1);
+            margin: auto;
+            width: 100%;
+
+            .grid-home,
+            .grid-cuenta,
+            .grid-articulos,
+            .grid-noticias,
+            .grid-products {
+                display: flex;
+                flex-direction: column;
+                #cabecera {
+                    .cabecera {
+                        .cabecera__logo {
+                            width: 50%;
+                            height: auto;
+                            left: 1%;
+                            margin-left: 12%;
+                            margin-top: 0;
+                        }
+                        .cabecera__background {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
                 }
-            }
-            #carouselFade {
-                grid-column: 1/-1;
-                display: none;
-            }
-            #cuerpo {
-                max-width: 100%;
-                height: auto;
-                display: grid;
-                grid-area: publi;
-                grid-column: 1/-1;
-                .cuerpo {
-                    img {
-                        height: auto;
-                        width: 50%;
-                    }
-                    .cuerpo-parrafo-titulo {
-                        font-size: large;
-                    }
-                    h5 {
-                        display: none;
-                    }
-                    .cuerpo-parrafo-item {
-                        font-size: 120%;
-                        line-height: 20px;
-                        font-family: 'Bebas Neue';
-                        text-align: center;
-                        text-decoration: none;
-                        margin: 0% 1% 0% 1%;
-                        padding: 1% 0% 1% 0%;
-                        color: rgb(202, 198, 198);
-                            &:hover {
-                            font-size: x-large;
-                            color: rgb(187, 191, 72);
-                            animation: comprar 0.5s  0s 0.5 normal forwards;
-                                @keyframes comprar {
-                                    0% {
-                                        transform: scale(1);
-                                    }
-                                    50% {
-                                        transform: scale(1.1);
-                                    }
-                                    100% {
-                                        transform: scale(1);
+                #carouselFade {
+                    grid-column: 1/-1;
+                    display: none;
+                }
+                #cuerpo {
+                    max-width: 100%;
+                    height: auto;
+                    display: grid;
+                    grid-area: publi;
+                    grid-column: 1/-1;
+                    .cuerpo {
+                        img {
+                            height: auto;
+                            width: 50%;
+                        }
+                        .cuerpo-parrafo-titulo {
+                            font-size: large;
+                        }
+                        h5 {
+                            display: none;
+                        }
+                        .cuerpo-parrafo-item {
+                            font-size: 120%;
+                            line-height: 20px;
+                            font-family: 'Bebas Neue';
+                            text-align: center;
+                            text-decoration: none;
+                            margin: 0% 1% 0% 1%;
+                            padding: 1% 0% 1% 0%;
+                            color: rgb(202, 198, 198);
+                                &:hover {
+                                font-size: x-large;
+                                color: rgb(187, 191, 72);
+                                animation: comprar 0.5s  0s 0.5 normal forwards;
+                                    @keyframes comprar {
+                                        0% {
+                                            transform: scale(1);
+                                        }
+                                        50% {
+                                            transform: scale(1.1);
+                                        }
+                                        100% {
+                                            transform: scale(1);
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-            #portada {
-            grid-column: 1/-1;
-            }
-            .side, #aside {
-            grid-column: 1/-1;
-            }
-            #banner {
-                padding: 2%;
-                    .banner{
-                        a {
-                            img {
-                                width: 30%;
-                                height: auto;
-                            }
-                            h2 {
-                                text-align: center;
-                                font-size: medium;
-                            }
-                        }
-                    }        
-            }
-            #footer {
-                .container {
-                    .widget {
-                        margin: 5%;
-                        padding: 2%;
-                    }
-                }
-            }
-        }
-        .grid-articulos {
-            #noticias {
-            grid-column: 1/-1;
-            margin-top: 1%;
-                ul {
-                    margin-bottom: 1%;
-                    li {
-                    display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                        a{
-                            display: flex;
-                            flex-direction: column-reverse;
-                            img {
-                            width: 100%;
-                            height: auto;
-                            border-radius: 4% 4% 4% 4%;
-                            }
-                            h2 {
-                            text-align: center;
-                            font-size: x-large;
-                            font-weight: 200;
-                            }
-                        }
-                    }
-                }
-            }
-            #aside {
-            display: none;
-            }
-        }
-        .grid-noticias {
-            #articulo{
+                #portada {
                 grid-column: 1/-1;
-                .articulo {
-                    margin: 1%;
-                    h1 {
-                    font-size: large;
+                }
+                .side, #aside {
+                grid-column: 1/-1;
+                }
+                #banner {
                     padding: 2%;
+                        .banner{
+                            a {
+                                img {
+                                    width: 30%;
+                                    height: auto;
+                                }
+                                h2 {
+                                    text-align: center;
+                                    font-size: medium;
+                                }
+                            }
+                        }        
+                }
+                #footer {
+                    .container {
+                        .widget {
+                            margin: 5%;
+                            padding: 2%;
+                        }
                     }
-                    h2 {
-                    font-size: medium;
-                    }    
-                    h3 {
-                    font-size: medium;
-                    padding: 1%;
-                    margin: 3%;
-                    }  
-                } 
-                .articulo-foto {
-                    padding: 1%;
-                    margin: 0%;
-                } 
+                }
             }
+            .grid-articulos {
+                #noticias {
+                grid-column: 1/-1;
+                margin-top: 1%;
+                    ul {
+                        margin-bottom: 1%;
+                        li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                            a{
+                                display: flex;
+                                flex-direction: column-reverse;
+                                img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 4% 4% 4% 4%;
+                                }
+                                h2 {
+                                text-align: center;
+                                font-size: x-large;
+                                font-weight: 200;
+                                }
+                            }
+                        }
+                    }
+                }
+                #aside {
+                display: none;
+                }
+            }
+            .grid-noticias {
+                #articulo{
+                    grid-column: 1/-1;
+                    .articulo {
+                        margin: 1%;
+                        h1 {
+                        font-size: large;
+                        padding: 2%;
+                        }
+                        h2 {
+                        font-size: medium;
+                        }    
+                        h3 {
+                        font-size: medium;
+                        padding: 1%;
+                        margin: 3%;
+                        }  
+                    } 
+                    .articulo-foto {
+                        padding: 1%;
+                        margin: 0%;
+                    } 
+                }
+            }   
         }
             @media screen and (max-width: 378px) {
                 .grid-home {
