@@ -814,7 +814,7 @@
   font-family: arial;
   background: radial-gradient(ellipse, #49acf3 0%, #209bf1);
   margin: auto;
-  width: 75%;
+  width: 100%;
   /*Posible paleta de colores: #f7668e  #345bb3  #d3d0d7  #0a0a16  #209bf1  #2bdad1  #6f4f8f  #4f4d6f  */
   /* Media query */
 }
