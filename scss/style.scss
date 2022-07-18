@@ -34,6 +34,7 @@
 
         /* Media query */
         @media screen and (max-width: 768px) {
+            width: 100%;
             .grid-home,
             .grid-cuenta,
             .grid-articulos,
@@ -44,11 +45,10 @@
                 #cabecera {
                     .cabecera {
                         .cabecera__logo {
-                            width: 50%;
-                            height: auto;
-                            left: 1%;
-                            margin-left: 12%;
-                            margin-top: 0;
+                            width: 60%;
+                            height: auto; 
+                            margin-left: 0.5%;
+                            margin-top: 1%;
                         }
                         .cabecera__background {
                             width: 100%;
@@ -274,4 +274,3 @@
             }
         }  
     }
-
