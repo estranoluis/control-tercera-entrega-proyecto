@@ -1,5 +1,5 @@
 {
-  "name": "desafio-sass",
+  "name": "tercera-entrega-proyecto",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -296,11 +296,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/estranoluis/control-estrano-desafio-sass.git"
+    "url": "git+https://github.com/estranoluis/control-estrano-tercera-entrega-proyecto.git"
   },
   "bugs": {
-    "url": "https://github.com/estranoluis/control-estrano-desafio-sass/issues"
+    "url": "https://github.com/estranoluis/control-estrano-tercera-entrega-proyecto/issues"
   },
-  "homepage": "https://github.com/estranoluis/control-estrano-desafio-sass#readme",
+  "homepage": "https://github.com/estranoluis/control-estrano-tercera-entrega-proyecto#readme",
   "description": ""
 }
