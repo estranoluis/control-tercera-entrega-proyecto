@@ -1,7 +1,7 @@
 /* Tienda con productos*/
 
 .grid-product {
-    background-color: $bg-content;
+    background-color: $bg-home;
     margin-top: 1%;
     margin-bottom: 1%;
     padding-bottom: 50px;
@@ -42,7 +42,7 @@
       .product-info {
         @extend %imagen;
         border-radius: 0px 0px 7px 7px;
-        background-color: map-get($standard, bg-standard);
+        background-color: map-get($standard, color-standard);
         font-family: $font-content;
         .product-text {
           height: 220px auto;

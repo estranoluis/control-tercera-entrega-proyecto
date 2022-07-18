@@ -1,13 +1,13 @@
 /* Formulario inicio de sesion */
 
 .login {
-    background: -webkit-repeating-linear-gradient(#9c6ace ,#373550);
+    background-color: $bg-home;
     padding: 3% 5% 3% 5%;
     margin-top: 1%;
     margin-bottom: 1%;
     justify-content: center;
     .form-container{
-      background-color: #0a7bcb;
+      background-color: $bg-page;
       font-family: 'Poppins', sans-serif;
       text-align: center;
       padding: 30px 25px;
