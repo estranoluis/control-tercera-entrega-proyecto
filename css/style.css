@@ -416,7 +416,7 @@
 }
 .grid-articulos main ul li a:hover img {
   transition: all 0.5s;
-  transform: scale(1.05);
+  transform: scale(1);
 }
 .grid-articulos main ul li a:hover h2 {
   padding: 1%;
@@ -456,7 +456,7 @@
 }
 
 .grid-noticias #articulo {
-  background-color: #4f4d6f;
+  background-color: #345bb3;
   border-radius: 4px 4px 4px 4px;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -1002,7 +1002,7 @@
   #body .grid-articulos #noticias ul li a img {
     width: 100%;
     height: auto;
-    border-radius: 4% 4% 4% 4%;
+    border-radius: 4px 4px 4px 4px;
   }
   #body .grid-articulos #noticias ul li a h2 {
     text-align: center;

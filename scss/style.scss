@@ -151,7 +151,7 @@
                                 img {
                                 width: 100%;
                                 height: auto;
-                                border-radius: 4% 4% 4% 4%;
+                                border-radius: map-get($standard,border-standard);
                                 }
                                 h2 {
                                 text-align: center;

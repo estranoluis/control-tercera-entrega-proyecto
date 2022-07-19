@@ -36,7 +36,7 @@
               border-radius: map-get($standard, border-standard);
               img {
                 transition: all 0.5s;
-                transform: scale(1.05);
+                transform: scale(1.0);
               }
               h2 {
                 padding: 1%;
@@ -82,7 +82,7 @@
 }  
 .grid-noticias {
   #articulo {
-    background-color: $bg-content;
+    background-color: $bg-home;
     border-radius: map-get($standard, border-standard);
     margin-top: 1%;
     margin-bottom: 1%;
